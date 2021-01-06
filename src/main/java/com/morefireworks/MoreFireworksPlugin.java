@@ -20,7 +20,7 @@ import java.util.Set;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "More Fireworks"
 )
 public class MoreFireworksPlugin extends Plugin
 {

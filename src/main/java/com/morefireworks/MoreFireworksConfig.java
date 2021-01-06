@@ -26,14 +26,4 @@ public interface MoreFireworksConfig extends Config
 	{
 		return 0;
 	}
-
-	@ConfigItem(
-			keyName = "easterEggs",
-			name = "Easter Eggs",
-			description = "Secret ways to get fireworks, or other things."
-	)
-	default boolean easter()
-	{
-		return true;
-	}
 }
