@@ -50,7 +50,7 @@ public class MoreFireworksPlugin extends Plugin
 	@Subscribe(priority = 4)
 	public void onOverheadTextChanged(OverheadTextChanged event)
 	{
-		if(event.getOverheadText().toLowerCase().contains("gz")||event.getOverheadText().toLowerCase().contains("@@@")||event.getOverheadText().toLowerCase().contains(config.custom())){
+		if(event.getOverheadText().toLowerCase().contains("gz")||event.getOverheadText().toLowerCase().contains("@@@")||event.getOverheadText().toLowerCase().contains(config.custom().toLowerCase())){
 			event.getActor().setGraphic(fireWorks[new Random().nextInt(fireWorks.length)]);
 			event.getActor().setSpotAnimFrame(0);
 		}
